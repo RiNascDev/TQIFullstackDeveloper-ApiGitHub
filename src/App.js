@@ -1,8 +1,17 @@
-function App() {
+import Layout from "./components/layout";
+import Profile from "./components/profile";
+import { ResetCSS } from "./global/resetCSS";
+
+const App = () => {
   return (
-    <div className="App">
-      github api
-    </div>
+    <main>
+      <ResetCSS/>
+     <Layout>
+      <Profile/>
+      <div>Repositories</div>
+      <div>Starreds</div>
+     </Layout>
+    </main>
   );
 }
 
